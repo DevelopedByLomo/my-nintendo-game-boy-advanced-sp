@@ -1,0 +1,286 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  font-size: 62.5%;
+  background-color: #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.game-body {
+  max-width: 22rem;
+  width: 90%;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+}
+.top-side {
+  width: 100%;
+  height: 205px;
+  background: #09755e;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.6rem 0.1rem;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.circle1 {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: rgba(0, 0, 0, 0.048) 6px solid;
+  top: 9px;
+  left: 5%;
+}
+.circle2 {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: rgba(0, 0, 0, 0.048) 6px solid;
+  top: 9px;
+  left: 50%;
+}
+.circle3 {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: rgba(0, 0, 0, 0.048) 6px solid;
+  top: 9px;
+  left: 90%;
+}
+.circle4 {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: rgba(0, 0, 0, 0.048) 6px solid;
+  bottom: 4px;
+  left: 20px;
+}
+.circle5 {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: rgba(0, 0, 0, 0.048) 6px solid;
+  bottom: 4px;
+  left: 90%;
+}
+
+.glass {
+  background-color: black;
+  width: 90%;
+  height: 90%;
+  display: flex;
+  color: rgb(197, 120, 5);
+  flex-direction: column;
+  text-align: center;
+  border-radius: 5px;
+}
+h4 {
+  font-size: 0.8rem;
+  margin: 3px;
+}
+.screen {
+  width: 90%;
+  background: url("./mario1.png");
+  background-size: contain;
+  height: 80%;
+  margin: auto;
+  margin-top: 0.5rem;
+  border: white 1px solid;
+}
+.middle {
+  width: 100%;
+  height: 37px;
+  background-color: rgb(91, 141, 5);
+  border-radius: 20px;
+  position: relative;
+  top: 0;
+  left: 0;
+  box-shadow: 6px 6px 10px;
+  z-index: 2;
+  border-top: black 4px solid;
+}
+.left-hinge {
+  width: 5rem;
+  height: 40px;
+  background: lightpink;
+  position: absolute;
+  top: -3px;
+  left: 10%;
+  border: black 1px solid;
+  box-shadow: 3px 3px 4px;
+  border-radius: 10px;
+}
+
+.right-hinge {
+  width: 1.5rem;
+  height: 40px;
+  background: lightpink;
+  position: absolute;
+  top: -3px;
+  right: 10%;
+  border: black 1px solid;
+  box-shadow: 3px 3px 4px;
+  border-radius: 10px;
+}
+.down-side {
+  width: 100%;
+  height: 205px;
+  background: #f46c3f;
+  border-radius: 15px;
+  position: relative;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+.reset {
+  background-color: #f46c3f;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  box-shadow: -3px -3px 6px;
+  display: grid;
+  place-items: center;
+}
+.reset-circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: cornsilk;
+  border: black 1px solid;
+}
+.green-light {
+  background: green;
+  width: 0.3rem;
+  height: 0.3rem;
+  position: absolute;
+  top: 12%;
+  right: 0;
+}
+.black-light {
+  background: black;
+  width: 0.3rem;
+  height: 0.3rem;
+  position: absolute;
+  top: 20%;
+  right: 0;
+}
+.plus-button {
+  position: absolute;
+  top: 30%;
+  left: 15%;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-color: #f46c3f;
+  box-shadow: -3px -3px 6px;
+}
+.action-button {
+  position: absolute;
+  top: 45%;
+  right: 10%;
+  width: 90px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #f46c3f;
+  box-shadow: -3px -3px 6px;
+  transform: rotate(-30deg);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.2rem;
+}
+.start {
+  background-color: #f46c3f;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 5%;
+  left: 40%;
+  box-shadow: -3px -3px 6px;
+  display: grid;
+  place-items: center;
+}
+.select {
+  background-color: #f46c3f;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 5%;
+  left: 60%;
+  box-shadow: -3px -3px 6px;
+  display: grid;
+  place-items: center;
+}
+.select-circle {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: cornsilk;
+  border: black 1px solid;
+}
+.select-start {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: cornsilk;
+  border: black 1px solid;
+}
+.straight {
+  width: 70px;
+  height: 20px;
+  background-color: cornsilk;
+  transform: rotate(90deg);
+  position: absolute;
+  top: 40%;
+  left: 10%;
+  border-radius: 5px;
+}
+.straight::before {
+  content: "";
+  width: 70px;
+  height: 20px;
+  background-color: cornsilk;
+  transform: rotate(90deg);
+  position: absolute;
+  top: -10%;
+  left: 0%;
+  border-radius: 5px;
+}
+.first-button {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: cornsilk;
+  border: black 1px solid;
+  display: grid;
+  place-items: center;
+}
+.second-button {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: cornsilk;
+  border: black 1px solid;
+  display: grid;
+  place-items: center;
+}
